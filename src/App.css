@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden
+}
+
+.container {
+  display: flex;
+
+  /* Align in Horizontal Axis */
+  justify-content: center;
+  align-items: center;
+
+  /* Align in Vertical Axis */
+  /* min-height: 50vh; */
+  overflow: hidden;
+}
+.content {
+  max-width: 600px;
+  min-width: 400px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.form-section, .presentation-section {
+  max-width: 500px;
+  margin: 2rem auto;
+  text-align: center;
+}
+.form-section label {
+  text-align: left;
+  display: block;
+}
+.form-section h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.form-section input {
+  width: 75%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  margin : 0 auto 1.5rem;
+}
+.form-section button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.presentation-section {
+  margin-top: 3rem;
+  /* border: 1px solid black; */
+  padding: 1rem;
+}
+
+.presentation-city {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.presentation-text {
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.presentation-weather {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 1em;
+}
+
+.presentation-text, .presentation-value {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  column-gap: 10px;
+  row-gap: 1em;
+  text-align: left;
+}
+
+.presentation-image {
+  margin: 1rem auto 0 auto;
+}
+
+footer {
+  min-width: 100%;
+}
+
+footer p {
+  margin-bottom: 0.25rem;
+}
